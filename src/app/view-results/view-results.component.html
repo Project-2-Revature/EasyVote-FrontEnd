@@ -1,0 +1,31 @@
+<div class="container">
+    <br/>
+    
+    <div *ngIf="is">
+        <h2>Contestant List</h2>
+    <div style="overflow-x: auto;">
+    <table  id="results">
+            <tr>
+                <th scope="col">Contestant Id</th>
+                <th scope="col">Name</th>
+                <th scope="col">AadharNumber</th>
+                <th scope="col">Location</th>
+                <th scope="col">Age</th>
+                <th scope="col">Vote Count</th>
+            </tr>
+                <tr *ngFor="let a of cont">
+                    <td>{{a.id}}</td>
+                    <td>{{a.name}}</td>
+                    <td>{{a.aadhaarNumber}}</td>
+                    <td>{{a.location}}</td>
+                    <td>{{a.age}}</td>
+                   <td>{{a.voteCount}}</td>
+                </tr>
+                
+    </table>
+  </div>
+</div>
+<div *ngIf="!is">
+    <h2>Results not yet published </h2>
+</div>
+</div>

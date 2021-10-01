@@ -1,0 +1,87 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  } 
+   h3{
+    padding: 100px 300px;
+    margin: 80px 80px;
+    text-align: center;
+    color: rgb(6, 34, 61);
+    display: contents;
+  }
+  .no-bullets{
+    list-style-type: none;
+}
+.no-bullets {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  .navbar li {display: inline-block; list-style-type: none;}
+  .navbar li:hover {background: #86DC4D; list-style-type: none;}
+  .navbar li:hover .no-bullets {display: block; list-style-type: none;}
+  .navbar li .no-bullets {
+    position: absolute;
+    width: 180px;
+    display: none;
+    list-style-type: none;
+    /* padding-top: 25px;
+    padding-bottom: 25px; */
+  }
+
+  .navbar li .no-bullets li { 
+    background: #86DC4D; 
+    display: block; 
+    list-style-type: none;
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
+  }
+  .navbar li .no-bullets li a {
+      display:block !important; 
+      list-style-type: none;
+    }
+     
+  .navbar li .no-bullets li:hover {
+      background: #86DC4D; 
+      list-style-type: none;
+      /* padding-top: 20px;
+      padding-bottom: 20px; */
+    }
+
+    .loginhover {
+        color: #2a2f3d;
+    }
+    
+
+  .loginhover:hover {
+        background: #4D80DC;
+        color: #ffffff;
+        text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      background-color: #000000dc;
+      border: none;
+      color: rgb(224, 211, 211);
+      padding: 20px 32px;
+      text-decoration: none;
+      margin: 0px 25px;
+      cursor: pointer;
+      /* position: fixed; */
+    }

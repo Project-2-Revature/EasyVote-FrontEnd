@@ -1,0 +1,30 @@
+<div class="container">
+  <br/>
+  <h2>Contestant List</h2>
+  <div style="overflow-x: auto;">
+  <table  id="ContestantList">
+          <tr>
+              <th scope="col">Contestant Id</th>
+              <th scope="col">Name</th>
+              <th scope="col">Contestant Image</th>
+              <th scope="col">AadharNumber</th>
+              <th scope="col">Location</th>
+              <th scope="col">Age</th>
+              <th scope="col">Party Name</th>
+              <th scope="col">Party logo</th>
+              <th scope="col">Vote</th>
+          </tr>
+              <tr *ngFor="let a of cont">
+                  <td>{{a.id}}</td>
+                  <td>{{a.name}}</td>
+                  <td><img class="img-thumbnail"[src]="a.contestantImage" style="width:100px;height:100px;"></td>
+                  <td>{{a.aadhaarNumber}}</td>
+                  <td>{{a.location}}</td>
+                  <td>{{a.age}}</td>
+                  <td>{{a.partyName}}</td>
+                  <td><img class="img-thumbnail"[src]="a.partyLogo" style="width:100px;height:100px;"></td>
+                  <button  id="btn" (click)="voteInc(a.id,a.voteCount,a.aadhaarNumber)" >Vote</button>&nbsp;
+              </tr>
+  </table>
+</div>
+</div>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+</head>
+<body>    
+    <div>
+        <h2 style="text-align: center">Contestant Registration</h2>
+        <form>
+         
+          <label for="name">Name:</label><br>
+          <input type="text" placeholder="Enter your Name"[(ngModel)]="cont.name" name="Name"><br>
+          <label for="age">Age:</label><br>
+          <input type="number" placeholder="Enter your Age"[(ngModel)]="cont.age" name="Age"><br>
+          <label for="name">Party Name:</label><br>
+          <input type="text" placeholder="Enter party Name"[(ngModel)]="cont.partyName" name="Name"><br>
+          <label for="Aadhar">Aadhaar Number:</label><br>
+          <input type="number" placeholder="Enter Aadhaar Number"[(ngModel)]="cont.aadhaarNumber" name="Aadhar"><br>         
+          <label for="Aadhar">Location:</label><br>
+          <input type="text" placeholder="Enter Aadhaar Number"[(ngModel)]="cont.location" name="location"><br>         
+          <label for="image">Upload Contestant Image:</label><br>
+          <input type="text" placeholder="Enter image url"[(ngModel)]="cont.contestantImage" name="image"><br> 
+          <label for="image">Upload Party Logo:</label><br>
+          <input type="text" placeholder="Enter image url" [(ngModel)]="cont.partyLogo" name="image"><br> 
+
+          <input class="btn btn-primary button" type="submit" (click)="registerContestantAngular()" name="Register as Contestant">
+          
+        </form>
+      </div>
+      
+</body>
+</html>  
+  
+  
+  
+  
+  
+  <!-- <h2>Contestant Registration page</h2>
+  <div class="container scrnHeight">
+    <div class="simple">
+      <form  #signupform="ngForm" (ngSubmit)=registerContestantAngular()>
+       
+        <br/>
+        <!- <small [class.text-danger]="msg.status==500">{{msg.message}}</small> -->
+        <!-- <div class="form-group">
+          <label for="fname">Contestant Name:</label>
+          <input type="text" class="form-control" placeholder="FirstName" name="firstname"
+            [(ngModel)]="cont.name" required pattern="[a-zA-Z]{2,20}" #firstname="ngModel"
+            [class.is-invalid]="firstname.invalid && firstname.touched">
+            <small id="Vname" *ngIf="password.invalid && password.touched" > Name is Invalid!</small>
+        </div>
+        <br>
+        <div class="form-group"> -->
+          <!-- <label for="email">Email </label> -->
+          <!-- <label for="fname">Contestant Age:</label>
+          <input type="text" class="form-control" placeholder="ContestantAge" name="email"
+            [(ngModel)]="cont.age" required pattern="[0-9]{1,2}"
+            #email="ngModel" [class.is-invalid]="email.invalid && email.touched">
+            <small id="Vname" *ngIf="password.invalid && password.touched">Invalid age</small>
+        </div>
+        <br/>
+        <div class="form-group">
+          <label for="fname">Party Name:</label>
+          <input type="text" class="form-control" placeholder="Party Name" name="password"
+            [(ngModel)]="cont.partyName" required pattern="[a-zA-Z]{2,10}" #password="ngModel"
+            [class.is-invalid]="password.invalid && password.touched">
+          <small id="Vname" *ngIf="password.invalid && password.touched">Location invalid!</small>
+        </div>
+        <br/>
+        <button type="submit" id="sub" class="button">Register</button>
+        <br/>
+        {{this.cont.name}}:Registered Successfully
+      </form>
+    </div>
+  </div>
+  <div>
+  </div>  -->

@@ -1,0 +1,46 @@
+<div class="EasyVote-Menu-container">
+<nav class="navbar">
+    <ul>
+        <!-- <button> -->
+            <a href="">Home</a>
+        <!-- </button> -->
+        
+
+    <div class="dropdown">
+        <button class="dropbtn">Registration 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">                       
+                <a href="/VoterRegistration">Voter</a>
+                <a href="/ContestantRegistration">Contestant</a>
+                                    
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Login 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">                       
+                <a href="/VoterLogin">Voter</a>
+                <a href="/AdminLogin">Admin</a>
+                                    
+        </div>
+    </div>
+
+
+    
+    <li class="nav-item">                
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/Results">View Results</a></li>  
+   
+    <!-- <li style="float:right"><a class="active" >Logout</a></li> -->
+
+</ul>
+</nav>
+</div>
+       <router-outlet></router-outlet> 
+       <footer>
+        <p>For any queries please contact:</p>
+        <p>
+        <a href="mailto:admin@easyvote.com" style="color:white">admin@easyvote.com</a></p>
+      </footer> 

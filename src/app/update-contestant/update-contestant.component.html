@@ -1,0 +1,24 @@
+<div class="container-fluid">
+    <h2>Manage Voting</h2>
+</div>
+
+<nav class="navbar">
+  <ul>
+  <li class="nav-item">
+      <a class="nav-link" routerLink="/DeleteContestant">DeleteContestant</a></li>
+  <li class="nav-item">
+  <li class="nav-item">
+       <a class="nav-link" routerLink="/UpdateContestant">ManageVoting</a></li>
+                    
+  <li class="nav-item">
+      <a class="nav-link" routerLink="/ViewVoters">ViewVoters</a></li>
+  </ul>
+</nav> 
+<body>
+  <div>
+    Start Elections   : <button id="btn" type="button" class="btn btn-primary" (click)="startElections()">Start!</button><br><br>
+    Stop Elections    :<button id="btn" type="button" class="btn btn-danger" (click)="stopElections()">Stop</button><br><br>
+    Publish Results   :<button id="btn" type="button" class="btn btn-danger" (click)="publishResults()">Publish</button><br><br>
+    Unpublish Results :<button id="btn" type="button" class="btn btn-danger" (click)="stopResults()">Stop</button><br>
+  </div>
+</body>

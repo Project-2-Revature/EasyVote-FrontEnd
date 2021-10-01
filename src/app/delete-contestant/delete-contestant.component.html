@@ -1,0 +1,26 @@
+<div class="container-fluid">
+    <h2>Delete Contestant</h2>
+</div>
+
+<nav class="navbar">
+  <ul>
+  <li class="nav-item">
+      <a class="nav-link" routerLink="/DeleteContestant">DeleteContestant</a></li>
+  <li class="nav-item">
+  <li class="nav-item">
+       <a class="nav-link" routerLink="/UpdateContestant">ManageVoting</a></li>
+      
+  <li class="nav-item">
+      <a class="nav-link" routerLink="/ViewVoters">ViewVoters</a></li>
+  </ul>
+</nav> 
+<body >
+  
+<form>
+  
+    <label for="ContestantID">Enter Contestant Id:</label>
+    <input type="text" placeholder="Enter Contestant ID" id="Contestant Id" [(ngModel)]="cont.id" name="Contestant Id"><br>
+  </form>
+  <input class="btn btn-primary" type="submit" name="Login as Voter"(click)="deleteContestantAngular()">
+ 
+</body>

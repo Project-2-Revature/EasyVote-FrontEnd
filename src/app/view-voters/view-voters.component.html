@@ -1,0 +1,38 @@
+
+    
+    
+<nav class="navbar">
+    <ul>
+    <li class="nav-item">
+        <a class="nav-link" routerLink="/DeleteContestant">DeleteContestant</a></li>
+    <li class="nav-item">
+    <li class="nav-item">
+         <a class="nav-link" routerLink="/UpdateContestant">ManageVoting</a></li>
+    <li class="nav-item">
+        <a class="nav-link" routerLink="/ViewVoters">ViewVoters</a></li>
+    </ul>
+</nav> 
+<div class="container">
+    <br/>
+<h2>Voter List</h2>
+    <div style="overflow-x: auto;">
+    <table  id="votePage">
+            <tr>
+                <th scope="col">Voter Id</th>
+                <th scope="col">Name</th>
+                <th scope="col">Aadhar Number</th>
+                <th scope="col">Location</th>
+                <th scope="col">Age</th>
+                
+            </tr>
+                <tr *ngFor="let a of vot">
+                    <td>{{a.id}}</td>
+                    <td>{{a.name}}</td>
+                    <td>{{a.aadhaarNumber}}</td>
+                    <td>{{a.location}}</td>
+                    <td>{{a.age}}</td>
+                    
+                </tr>
+    </table>
+</div>
+</div>

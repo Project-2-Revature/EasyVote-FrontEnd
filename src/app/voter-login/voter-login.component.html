@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+</head>
+<body>    
+    <div>
+        <h2 style="text-align: center">Voter Login</h2>
+        <form>
+          <label for="id">Voter ID:</label><br>
+          <input type="text" placeholder="Enter your Voter ID"[(ngModel)]="vot.id" name="Voter ID"><br>
+
+          <label for="name">Name:</label><br>
+          <input type="text" placeholder="Enter your Name"[(ngModel)]="vot.name" name="Name"><br>
+               
+          <label for="Aadhar">Aadhaar Number:</label><br>
+          <input type="number" placeholder="Enter Aadhaar Number"[(ngModel)]="vot.aadhaarNumber" name="Aadhar"><br>         
+          
+          <input class="btn btn-primary" type="submit"(click)="loginVoterAngular()" name="Login as Voter">
+        </form>
+      </div>
+      
+</body>
+</html>
+
+
+<!-- <div class="container-fluid"> -->
+    <!-- <h2>Voter Login</h2>
+</div>
+<body>
+  <h3>Voter can only login for once</h3>
+ 
+<form>
+
+  <label for="fname">Voter ID:</label><br>
+    <input type="text" placeholder="Enter your Voter ID"[(ngModel)]="vot.id" name="Voter ID"><br>
+    
+    <label for="Aadhar">Aadhar Number:</label><br>
+    <input type="number" placeholder="Enter Aadhar Number"[(ngModel)]="vot.aadhaarNumber" name="Aadhar"><br>
+  </form>
+  <button class="btn btn-primary" type="submit"(click)="loginVoterAngular()" >Login as Voter</button>
+</body> -->
+
